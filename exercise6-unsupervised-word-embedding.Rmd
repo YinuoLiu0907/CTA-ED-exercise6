@@ -525,10 +525,6 @@ normalized_prob <- skipgram_probs %>%
   mutate(p_together = p / p1 / p2)
 ```
 
-Check if the words are in the embedding
-```{r}
-c("climate", "education", "health", "housing") %in% rownames(glove_embedding)
-```
 
 Check the most related words
 ```{r}
